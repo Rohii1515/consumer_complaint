@@ -8,8 +8,6 @@ from pyspark.ml.feature import StandardScaler, VectorAssembler, OneHotEncoder, S
 from pyspark.ml.pipeline import Pipeline
 
 from consumer_complaint.config.spark_manager import spark_session
-from consumer_complaint.exception import FinanceException
-from consumer_complaint.logger import logger
 from consumer_complaint.entity.artifact_entity import DataValidationArtifact, DataTransformationArtifact
 from consumer_complaint.entity.config_entity import DataTransformationConfig
 from pyspark.sql import DataFrame
